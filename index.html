@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <title>BookLine - Bookstore in Tbilisi</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="anita akhobadze">
+        <meta name="description" content="The best book store in Tbilisi">
+        <meta name="keywords" content="Book, Literature, Bookstore ">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logoMerger">
+                <img class="logoImg" src="./images/bookLogo.png" alt="book logo">
+                <h1>BookLine</h1>
+            </div>
+            <nav class="navBar">
+                <a href="#">მთავარი</a>
+                <a href="#">რეგისტრაცია</a>
+                <a href="#">ჩვენს შესახებ</a>
+                <a href="#">სერვისები</a>
+                <a href="#">ბლოგი</a>
+                <a href="#">კონტაქტი</a>
+            </nav>
+        </header>
+        <main class="main">
+            <img class="library" src="./images/library.jpg" alt="ბიბლიოთეკა">
+            <div>
+                <h1>საუკეთესო წიგნების არჩევანი ერთ სივრცეში</h1>
+                <h3>კლასიკა • თანამედროვე • საგანმანათლებლო</h3>
+                <button id="showCollection">კოლექციის ნახვა</button>
+                
+            </div>
+            
+        </main>
+            <div id="collectionBox">
+                <div class="searchBox">
+                <input type="text" id="searchInput" placeholder="Search books...">
+                <button id="searchBtn">Search</button>
+                </div>
+                <div id="loader">Loading...</div>
+                <div id="booksContainer"></div>
+            </div>
+            
+
+        <section class="firstPage">
+            
+        </section>
+        <section class="signUpBox">
+            <div id="pressBtn1">
+                <p>დარეგისტრირება თუ გნებავთ დააჭირეთ ღილაკს</p>
+                <button id="signUpBtn1">რეგისტრაცია</button>
+            </div>
+            
+             <form action="#" method="post" id="signup_form">
+                <label for="firstName">სახელი:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="შეიყვანეთ სახელი">
+                
+                <label for="lastName">გვარი:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="შეიყვანეთ გვარი">
+                
+                <label for="email">ელ-ფოსტა:</label>
+                <input type="email" name="email" id="email" placeholder="შეიყვანეთ ელ-ფოსტა">
+                
+                <label for="password">პაროლი:</label>
+                <input type="password" name="password" id="password" placeholder="შეიყვანეთ პაროლი">
+                
+                <label for="password">გაიმეორეთ პაროლი:</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="გაიმეორეთ პაროლი">
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section class="signInBox">
+
+            <div id="pressLoginBtn">
+                <p>სისტემაში შესვლა თუ გსურთ დააჭირეთ ღილაკს</p>
+                <button id="signInBtn">ავტორიზაცია</button>
+            </div>
+
+            <form action="#" method="post" id="login_form">
+                <label for="email">ელ-ფოსტა:</label>
+                <input type="email" name="email" id="loginEmail" placeholder="შეიყვანეთ ელ-ფოსტა">
+
+                <label for="password">პაროლი:</label>
+                <input type="password" name="password" id="loginPassword" placeholder="შეიყვანეთ პაროლი">
+
+                <button type="submit">Log in</button>
+            </form>
+
+        </section>
+        <section class="bookSection">
+
+    
+
+        </section>
+        <section class="aboutUs">
+            <h2>ჩვენს შესახებ</h2>
+            <p>
+                BookLine არის წიგნების მაღაზია, რომელიც მომხმარებლებს სთავაზობს
+                კლასიკურ, თანამედროვე და საგანმანათლებლო ლიტერატურას ერთ სივრცეში.
+                ჩვენი მიზანია შევქმნათ გარემო, სადაც მკითხველები აღმოაჩენენ
+                ახალ ავტორებს, საინტერესო ისტორიებს და ცოდნას.
+            </p>
+            <p>
+                ჩვენ გვჯერა, რომ წიგნი არის საუკეთესო გზა განვითარებისა და
+                შთაგონებისთვის. სწორედ ამიტომ მუდმივად ვაახლებთ კოლექციას
+                და ვცდილობთ შევთავაზოთ საუკეთესო არჩევანი.
+            </p>
+            <div class="address">
+                <div>მისამართი:</div>
+                <a href="#">თბილისი, რუსთაველის გამზირი 15</a>
+            </div>
+        </section>  
+        
+        <section class="services">
+            <div class="serviceBox">
+                <h2>ფასიანი მიტანის სერვისი</h2>
+                <p>
+                    BookLine გთავაზობთ სწრაფ და უსაფრთხო მიტანის სერვისს
+                    საქართველოს ნებისმიერ კუთხეში. თქვენი შეკვეთილი წიგნები
+                    დაცულად და დროულად მოგეწოდებათ.
+                </p>
+                <div class="priceBox">
+                    <p>მიტანის საფასური:</p><br>
+                    <p>თბილისი - 5₾</p>
+                    <br>
+                    <p>რეგიონები - 10₾</p>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h2>წიგნების შეკვეთა</h2>
+                <p>
+                    თუ სასურველი წიგნი არ არის ხელმისაწვდომი მაღაზიაში,
+                    შეგიძლიათ გააკეთოთ სპეციალური შეკვეთა. ჩვენ დავუკავშირდებით
+                    გამომცემლობას და მოგაწვდით წიგნს უმოკლეს დროში.
+                </p>
+                <div class="priceBox">
+                    <p>სპეციალური შეკვეთის ვადა:</p>
+                    <br>
+                    <p>5-10 სამუშაო დღე</p>
+                </div>
+            </div>
+            
+        </section>
+        <section class="pricingSection">
+            <div class="pricingBox">
+                <div class="pricingGrid">
+                    <div class="basic">
+                        <h3>სტანდარტული მიტანა</h3>
+                        <p class="price">5₾</p>
+                        <p>თბილისის მასშტაბით</p>
+                    </div>
+                    <div class="premium">
+                        <h3>რეგიონალური მიტანა</h3>
+                        <p class="price">10₾</p>
+                        <p>საქართველოს ნებისმიერ კუთხეში</p>
+                    </div>
+                    <div class="order">
+                        <h3>სპეციალური შეკვეთა</h3>
+                        <p class="price">15₾+</p>
+                        <p>არარსებული წიგნის ჩამოტანა</p>
+                    </div>
+                    <div class="vip">
+                        <h3>VIP მომსახურება</h3>
+                        <p class="price">25₾</p>
+                        <p>პრიორიტეტული მიტანა + შეფუთვა</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="blogSection">
+            <div class="blogText">
+                <h3>რატომ არის კითხვა მნიშვნელოვანი?</h3>
+                <p>
+                    კითხვა ავითარებს წარმოსახვას, ზრდის ცოდნას და აუმჯობესებს
+                    კონცენტრაციას. წიგნები გვაძლევს შესაძლებლობას აღმოვაჩინოთ
+                    ახალი სამყაროები და შევიცნოთ განსხვავებული პერსპექტივები.
+                </p>
+                <a href="#" class="readMore">წაიკითხე მეტი</a>
+            </div>
+
+            <div class="blogText">
+                <h3>5 თანამედროვე ავტორი, რომელიც უნდა წაიკითხოთ</h3>
+                <p>
+                    თანამედროვე ლიტერატურა მრავალფეროვანია და სავსეა საინტერესო
+                    თემებით. ამ სტატიაში გაგაცნობთ ავტორებს, რომლებიც დღეს
+                    განსაკუთრებით პოპულარული არიან.
+                </p>
+                <a href="#" class="readMore">წაიკითხე მეტი</a>
+            </div>
+
+            <div class="blogText">
+                <h3>როგორ ავარჩიოთ წიგნი?</h3>
+                <p>
+                    წიგნის არჩევა ხშირად რთულია. მნიშვნელოვანია გაითვალისწინოთ
+                    თქვენი ინტერესები, ჟანრი და რეკომენდაციები. სწორად შერჩეული
+                    წიგნი გახდება თქვენი საუკეთესო თანამგზავრი.
+                </p>
+                <a href="#" class="readMore">წაიკითხე მეტი</a>
+            </div>
+
+        </section>
+        <section class="contactSection">
+            <div class="contactInfo">
+                <h2>დაგვიკავშირდით</h2>
+                <p><strong>მისამართი:</strong> თბილისი, რუსთაველის გამზირი 15</p>
+                <p><strong>ტელეფონი:</strong> +995 599 123 456</p>
+                <p><strong>ელფოსტა:</strong> info@bookline.ge</p>
+                <p>ჩვენი გუნდი მზად არის უპასუხოს თქვენს შეკითხვებს.</p>
+            </div>
+            <div class="contactForm">
+                <h2>მოგვწერეთ</h2>
+                <form>
+                    <input type="text" placeholder="სახელი" required>
+                    <input type="email" placeholder="ელფოსტა" required>
+                    <textarea placeholder="თქვენი შეტყობინება..." required></textarea>
+                    <button type="submit">გაგზავნა</button>
+                </form>
+            </div>
+        </section>
+
+
+
+        <footer class="footer">
+
+            <div class="footerContainer">
+
+                <div class="footerBox">
+                    <h3>BookLine</h3>
+                    <p>Your trusted bookstore offering the best selection of classic,
+                    modern and educational literature.</p>
+                </div>
+
+                <div class="footerBox">
+                    <h4>Quick Links</h4>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Blog</a>
+                </div>
+
+                <div class="footerBox">
+                    <h4>Contact</h4>
+                    <p>15 Rustaveli Ave, Tbilisi</p>
+                    <p>+995 599 123 456</p>
+                    <p>info@bookline.ge</p>
+                </div>
+
+            </div>
+
+            <div class="footerBottom">
+                © 2026 BookLine | All Rights Reserved
+            </div>
+        </footer>
+        <div id="modalOverlay" class="modalOverlay">
+            <div class="modal">
+                <span id="closeModal" class="closeModal">X</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+        <script type="module" src="./app.js"></script>
+    </body>
+</html>
